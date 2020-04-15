@@ -84,7 +84,7 @@ def figure_plot(title, x, y_list, x_label, y_label, label, color_list, filename=
 	
 if __name__=="__main__":
 
-	data.path.append((r"/home/huangyuanhao/share/nltk_data"))
+	data.path.append((r"/home/xxxxx/share/nltk_data"))
 	sen_tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
 	sentiment_analyzer = SentimentIntensityAnalyzer()
 	data_file = '20190716_merged_data_subsetvariables_183.csv'

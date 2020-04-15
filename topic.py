@@ -115,7 +115,7 @@ def documents(pdf_txt_list):
 	for txt_i in pdf_txt_list:
 		if not os.path.exists("txt/"+ txt_i + '.txt'):
 			try:
-				filename = "/home/huangyuanhao/share/sentiment/github/" + txt_i + ".pdf"
+				filename = "/home/xxxxx/share/sentiment/github/" + txt_i + ".pdf"
 				#print(filename)
 				text = extract_text_from_pdf(filename)
 				with open("txt/"+ txt_i + '.txt', 'w') as f_txt:
@@ -147,7 +147,7 @@ def sklearn_LDA(num_features, num_topics, num_top_words, documents):
 	
 if __name__ == "__main__":
 
-	data.path.append((r"/home/huangyuanhao/share/nltk_data"))
+	data.path.append((r"/home/xxxx/share/nltk_data"))
 	
 	#sen_tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
 	#sentiment_analyzer = SentimentIntensityAnalyzer()
