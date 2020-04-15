@@ -79,7 +79,7 @@ def sentiment_analysis(sen_tokenizer, sentiment_analyzer, text):
 	
 if __name__ == "__main__":
 
-	data.path.append((r"/home/huangyuanhao/share/nltk_data"))
+	data.path.append((r"/home/xxxxx/share/nltk_data"))
 
 	#text = extract_text_from_pdf("atom_1155_VS[1].pdf")
 	#index = text.index("hoolio commented on Nov 26, 2013")
@@ -90,7 +90,7 @@ if __name__ == "__main__":
 	sen_tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
 	sentiment_analyzer = SentimentIntensityAnalyzer()
 	num_new_col = 8
-	data_file = "/home/huangyuanhao/share/merged.csv"
+	data_file = "/home/xxxxx/share/merged.csv"
 	target_file = "merged_sentiment_final_183.csv"
 	index_file = 'data_new_183.csv'
 	
@@ -124,7 +124,7 @@ if __name__ == "__main__":
 					date = datetime.strptime(str_date, '%d-%b')
 				'''
 				try:
-					filename = "/home/huangyuanhao/share/sentiment/github/" + data[i][1] + ".pdf"
+					filename = "/home/xxxxx/share/sentiment/github/" + data[i][1] + ".pdf"
 					#print(filename)
 					text = extract_text_from_pdf(filename)
 					with open("txt/"+ data[i][1] + '.txt', 'w') as f_txt:
